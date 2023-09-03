@@ -6,11 +6,18 @@
   />
   <div class="logo-text">
     <h1 class="logo-title">ST. GEORGE & ST. JOSEPH SCOUTS</h1>
-    <h2 class="logo-slogan">Once a scout, always a scout.</h2>
+    <h2 class="logo-slogan">Scout est toujours prêt.</h2>
   </div>
 </div>
 <div class="nav-bar">
-  <div *ngFor="let PageTab of NavBarPages">
+  <div class="page-tab-container" *ngFor="let PageTab of NavBarPages">
     <a class="page-tab" [href]="PageTab.link">{{ PageTab.title }}</a>
+    <ul class="page-tab-subsections" *ngIf="PageTab.sub_titles.length != 0">
+      <li *ngFor="let PageTabSubsection of PageTab.sub_titles">
+        <a class="page-tab-subsection" [href]="PageTabSubsection.link">{{
+          PageTabSubsection.title
+        }}</a>
+      </li>
+    </ul>
   </div>
 </div>
