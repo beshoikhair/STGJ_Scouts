@@ -1,0 +1,60 @@
+@import "../../../assets/variables.less";
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: @footer-color;
+}
+.footer-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 40px;
+}
+.logo-text {
+  color: @white-color;
+}
+.logo-image {
+  width: 140px;
+  height: 140px;
+  padding-right: 20px;
+  font-size: @font-55;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 40px;
+}
+
+.content-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: @deep-purple-color;
+
+  h2 {
+    font-size: @font-35;
+  }
+
+  .email {
+    color: @purple-dark-background-color;
+  }
+
+  p {
+    font-size: @font-28;
+  }
+  .social-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 120px;
+  }
+
+  .social-link-image {
+    fill: @deep-purple-color;
+    height: 30px;
+    width: 30px;
+  }
+}

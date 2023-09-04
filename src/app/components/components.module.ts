@@ -4,6 +4,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { RedButtonComponent } from './red-button/red-button.component';
 import { YellowButtonComponent } from './yellow-button/yellow-button.component';
 import { YellowTextButtonComponent } from './yellow-text-button/yellow-text-button.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -11,6 +12,7 @@ import { YellowTextButtonComponent } from './yellow-text-button/yellow-text-butt
     RedButtonComponent,
     YellowButtonComponent,
     YellowTextButtonComponent,
+    FooterComponent,
   ],
   imports: [CommonModule],
   exports: [
@@ -18,6 +20,7 @@ import { YellowTextButtonComponent } from './yellow-text-button/yellow-text-butt
     RedButtonComponent,
     YellowButtonComponent,
     YellowTextButtonComponent,
+    FooterComponent,
   ],
 })
 export class ComponentsModule {}

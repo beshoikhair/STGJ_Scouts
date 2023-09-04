@@ -9,6 +9,6 @@ export class AppComponent {
   title = 'STGJ_Scouts_Website';
 
   clickFunction(who: string) {
-    alert(who + 'is Clicked');
+    alert(who + ' is Clicked');
   }
 }
