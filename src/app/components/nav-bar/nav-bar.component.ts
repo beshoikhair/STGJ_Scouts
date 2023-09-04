@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { PageTabs } from 'src/app/Shared/interfaces';
 
 @Component({
@@ -7,6 +8,12 @@ import { PageTabs } from 'src/app/Shared/interfaces';
   styleUrls: ['./nav-bar.component.less'],
 })
 export class NavBarComponent {
+  currentUrl: string = '';
+
+  constructor(private router: Router) {
+    this.currentUrl = this.router.url;
+  }
+
   NavBarPages: PageTabs[] = [
     {
       title: 'Home',
@@ -72,7 +79,7 @@ export class NavBarComponent {
     },
     {
       title: 'Contact Us',
-      link: '*',
+      link: this.currentUrl + '#footer',
       sub_titles: [],
     },
   ];
