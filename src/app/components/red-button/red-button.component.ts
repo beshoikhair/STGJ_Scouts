@@ -6,5 +6,5 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./red-button.component.less'],
 })
 export class RedButtonComponent {
-  @Input() text = '';
+  @Input() text = 'Red Button';
 }
