@@ -1,0 +1,75 @@
+<div class="home-page">
+  <div class="hero-section">
+    <div class="hero-content">
+      <p>Our slogan this year is</p>
+      <h2>BE PREPARED FOR</h2>
+      <h1>{{ currentYearSlogan }}</h1>
+      <app-red-button
+        class="hero-button"
+        text="Learn More About Us"
+      ></app-red-button>
+    </div>
+  </div>
+  <div class="calendar-section">
+    <img src="assets/images/calendar.jpg" alt="calendar" />
+    <div class="calendar-content">
+      <h1>
+        Scouts Calendar <br />
+        2023-2024
+      </h1>
+      <p>
+        Every year we provide a calendar for the scout members containing the
+        important dates such as camps, outings, activities and vacations. Our
+        first meeting in the month starts with a liturgy. Usually, our meetings
+        are on Saturdays from 9:00 am till 11:00 am except long weekends.
+      </p>
+      <app-yellow-button text="Check Our Calendar"></app-yellow-button>
+    </div>
+  </div>
+  <div class="gallery-section">
+    <div class="gallery-content">
+      <h1>
+        Our Memories <br />
+        From 2017 To 2023
+      </h1>
+      <p>
+        Since STGJ Scouts started in 2017, and the leaders are keen on recording
+        all the memories we had together. Our Galley has memories for all the
+        teams in the meetings, camps, activities, winter activities and
+        sleepovers. These memories are shared with all the families of the scout
+        members, so parents can share the fun moments their kids have.
+      </p>
+      <app-red-button text="Go To Gallery"></app-red-button>
+    </div>
+    <img src="assets/images/gallery_section.png" alt="" />
+  </div>
+
+  <div class="stats-section">
+    <h2>Scout Members</h2>
+    <div class="stats-content">
+      <div class="team-stats" *ngFor="let team of scoutTeams">
+        <h1>
+          {{ team.teamNumbers }}
+        </h1>
+        <p>
+          {{ team.teamName }}
+        </p>
+      </div>
+    </div>
+    <app-yellow-button text="Learn More About Our Teams"></app-yellow-button>
+  </div>
+  <div class="faq-section">
+    <h1>FAQ's</h1>
+    <p class="question">
+      <span>Q:</span> How can my kid join St. George and St. Joseph Scouts ?
+    </p>
+    <p class="answer">
+      <span>A:</span> St. George and St. Joseph Scouts will open the
+      registration for the new members in August 2024 for the next year
+      2022-2025. The registration is only for Grade 4 kids. For other ages, all
+      the applications will be in a waiting list. The decision depends on the
+      availability in the scouts team in the current year.
+    </p>
+    <app-yellow-text-button text="See More FAQ's"></app-yellow-text-button>
+  </div>
+</div>
