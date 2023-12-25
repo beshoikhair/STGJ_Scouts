@@ -1,0 +1,153 @@
+@import "../../../assets/variables.less";
+
+.baden-powell-page {
+  display: flex;
+  flex-direction: row;
+  padding: 50px;
+  gap: 50px;
+}
+
+.card {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  border-radius: 10px;
+}
+.baden-powell-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 5;
+  height: 700px;
+  padding: 40px 40px;
+
+  .baden-powell-avatar {
+    border-radius: 500px;
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    border: 5px @red-text-color solid;
+    background-image: url(../../../assets/images/Robert-Baden-Powell.png);
+    margin-bottom: 30px;
+  }
+
+  .baden-powell-title {
+    font-size: @font-70;
+    color: @purple-text-color;
+    margin-bottom: 30px;
+  }
+
+  .baden-powell-text {
+    font-size: @font-40;
+    overflow-y: scroll;
+    height: 300px;
+    line-height: 50px;
+    padding-right: 10px;
+    font-style: italic;
+  }
+
+  --sb-track-color: #ede7f6;
+  --sb-thumb-color: #552b9d;
+  --sb-size: 8px;
+
+  scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+
+  ::-webkit-scrollbar {
+    width: var(--sb-size);
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 10px;
+  }
+}
+
+.extra-info-section {
+  flex: 7;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+
+  .last-message-baden-powell-section {
+    flex: 1;
+    padding: 40px 30px 20px 30px;
+    background-color: @deep-purple-color;
+
+    .last-message-baden-powell-title {
+      font-size: @font-55;
+      color: @purple-text-color;
+      margin-bottom: 20px;
+    }
+
+    .last-message-baden-powell-text {
+      font-size: @font-40;
+      overflow-y: scroll;
+      max-height: 250px;
+      line-height: 50px;
+      padding-right: 10px;
+      font-style: italic;
+    }
+
+    --sb-track-color: #ffffff;
+    --sb-thumb-color: #552b9d;
+    --sb-size: 8px;
+
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+
+    ::-webkit-scrollbar {
+      width: var(--sb-size);
+    }
+
+    ::-webkit-scrollbar-track {
+      background: var(--sb-track-color);
+      border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: var(--sb-thumb-color);
+      border-radius: 10px;
+    }
+  }
+
+  .scouts-second-world-war-section {
+    flex: 1;
+    padding: 40px 30px;
+    .scouts-second-world-war-title {
+      font-size: @font-55;
+      color: @red-text-color;
+      margin-bottom: 20px;
+    }
+
+    .scouts-second-world-war-text {
+      font-size: @font-40;
+      overflow-y: scroll;
+      max-height: 210px;
+      line-height: 50px;
+      padding-right: 10px;
+      font-style: italic;
+    }
+
+    --sb-track-color: #ede7f6;
+    --sb-thumb-color: #d32f2f;
+    --sb-size: 8px;
+
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+
+    ::-webkit-scrollbar {
+      width: var(--sb-size);
+    }
+
+    ::-webkit-scrollbar-track {
+      background: var(--sb-track-color);
+      border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: var(--sb-thumb-color);
+      border-radius: 10px;
+    }
+  }
+}
