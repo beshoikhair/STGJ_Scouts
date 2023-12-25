@@ -75,3 +75,80 @@
     border-radius: 25px;
   }
 }
+
+// Our Mission Section
+.our-mission-section {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+
+  .our-mission-header {
+    color: @red-text-color;
+    font-size: @font-70;
+    align-self: center;
+    margin-bottom: 60px;
+  }
+  .mission-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .mission-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 225px;
+    height: 300px;
+    padding: 20px;
+    padding-bottom: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 25px;
+  }
+  .mission-card-header {
+    font-size: @font-55;
+    color: @yellow-light-background-color;
+  }
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .vision-card {
+    margin-top: 50px;
+    p {
+      font-size: @font-35;
+      font-weight: @weight-bold;
+      text-align: center;
+      line-height: 35px;
+    }
+    span {
+      color: @red-text-color;
+    }
+  }
+
+  .slogan-card {
+    p {
+      font-size: @font-55;
+      font-weight: @weight-bold;
+      color: @purple-text-color;
+    }
+  }
+
+  .missions-card {
+    margin-top: 50px;
+    .card-content {
+      margin-top: 20px;
+      justify-content: flex-start;
+    }
+    p {
+      font-size: @font-24;
+      line-height: 28px;
+      span {
+        font-size: @font-35;
+        font-weight: @weight-bold;
+      }
+    }
+  }
+}
