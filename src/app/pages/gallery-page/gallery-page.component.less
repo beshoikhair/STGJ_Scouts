@@ -1,0 +1,59 @@
+@import "../../../assets/variables.less";
+
+.gallery-header-section {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 200px;
+  background-color: @deep-purple-color;
+  align-items: center;
+  gap: 40px;
+}
+.gallery-header-title {
+  font-size: @font-70;
+  color: @red-text-color;
+}
+.gallery-header-content {
+  font-size: @font-55;
+  color: @purple-text-color;
+  text-align: center;
+}
+
+.gallery-folders {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 50px 50px 50px 100px;
+}
+.gallery-folder {
+  display: flex;
+  width: 30%;
+  max-width: 400px;
+  height: 600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -180px;
+  border-radius: 45px;
+  cursor: pointer;
+}
+.gallery-folder-layer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(49, 49, 49, 0.5);
+  border-radius: 45px;
+}
+.gallery-folder-year {
+  font-size: @font-55;
+  color: @white-color;
+  text-align: center;
+  line-height: 50px;
+}
+.gallery-folder:hover {
+  .gallery-folder-year {
+    font-size: @font-70;
+    color: @yellow-dark-background-color;
+  }
+}
