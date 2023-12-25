@@ -1,0 +1,22 @@
+<div class="gallery-page">
+  <div class="gallery-header-section">
+    <h1 class="gallery-header-title">Gallery</h1>
+    <h2 class="gallery-header-content">
+      A place where you can relive with us our memories from 2017 till 2024.
+    </h2>
+  </div>
+  <div class="gallery-folders">
+    <div
+      class="gallery-folder"
+      *ngFor="let folder of StgjScoutsGallery"
+      [ngStyle]="{ 'background-image': 'url(' + folder.imageSrc + ')' }"
+    >
+      <div class="gallery-folder-layer">
+        <h3 class="gallery-folder-year">
+          Year <br />
+          {{ folder.startingYear + " - " + (folder.startingYear + 1) }}
+        </h3>
+      </div>
+    </div>
+  </div>
+</div>
