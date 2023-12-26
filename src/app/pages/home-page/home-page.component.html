@@ -7,6 +7,7 @@
       <app-red-button
         class="hero-button"
         text="Learn More About Us"
+        (click)="goToAboutUsStgjScouts()"
       ></app-red-button>
     </div>
   </div>
@@ -23,7 +24,10 @@
         first meeting in the month starts with a liturgy. Usually, our meetings
         are on Saturdays from 9:00 am till 11:00 am except long weekends.
       </p>
-      <app-yellow-button text="Check Our Calendar"></app-yellow-button>
+      <app-yellow-button
+        text="Check Our Calendar"
+        (click)="goToAboutUsStgjScoutsCalendar()"
+      ></app-yellow-button>
     </div>
   </div>
   <div class="gallery-section">
@@ -39,7 +43,10 @@
         sleepovers. These memories are shared with all the families of the scout
         members, so parents can share the fun moments their kids have.
       </p>
-      <app-red-button text="Go To Gallery"></app-red-button>
+      <app-red-button
+        text="Go To Gallery"
+        (click)="goToGallery()"
+      ></app-red-button>
     </div>
     <img src="assets/images/gallery_section.png" alt="" />
   </div>
@@ -56,7 +63,10 @@
         </p>
       </div>
     </div>
-    <app-yellow-button text="Learn More About Our Teams"></app-yellow-button>
+    <app-yellow-button
+      text="Learn More About Our Teams"
+      (click)="goToTeamsOverview()"
+    ></app-yellow-button>
   </div>
   <div class="faq-section">
     <h1>FAQ's</h1>
@@ -70,6 +80,9 @@
       the applications will be in a waiting list. The decision depends on the
       availability in the scouts team in the current year.
     </p>
-    <app-yellow-text-button text="See More FAQ's"></app-yellow-text-button>
+    <app-yellow-text-button
+      text="See More FAQ's"
+      (click)="goToAboutUsStgjScoutsFaqs()"
+    ></app-yellow-text-button>
   </div>
 </div>

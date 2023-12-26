@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
 import { PageTabs } from 'src/app/Shared/interfaces';
 
 @Component({
@@ -8,21 +7,15 @@ import { PageTabs } from 'src/app/Shared/interfaces';
   styleUrls: ['./nav-bar.component.less'],
 })
 export class NavBarComponent {
-  currentUrl: string = '';
-
-  constructor(private router: Router) {
-    this.currentUrl = this.router.url;
-  }
-
   NavBarPages: PageTabs[] = [
     {
       title: 'Home',
-      link: '*',
+      link: '../home',
       sub_titles: [],
     },
     {
       title: 'Gallery',
-      link: '*',
+      link: '../gallery',
       sub_titles: [],
     },
     {
@@ -31,7 +24,7 @@ export class NavBarComponent {
       sub_titles: [
         {
           title: 'Teams Overview',
-          link: '*',
+          link: '../teams/teams-overview',
           sub_titles: [],
         },
         {
@@ -67,19 +60,19 @@ export class NavBarComponent {
       sub_titles: [
         {
           title: 'STGJ Scouts',
-          link: '*',
+          link: '../about-us/stgj-scouts',
           sub_titles: [],
         },
         {
           title: 'Baden Powell',
-          link: '*',
+          link: '../about-us/baden-powell',
           sub_titles: [],
         },
       ],
     },
     {
       title: 'Contact Us',
-      link: this.currentUrl + '#footer',
+      link: window.location.href + '#footer',
       sub_titles: [],
     },
   ];
