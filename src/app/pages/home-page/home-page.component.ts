@@ -33,4 +33,20 @@ export class HomePageComponent {
       teamNumbers: 25,
     },
   ];
+
+  goToAboutUsStgjScouts() {
+    window.location.href = '../about-us/stgj-scouts';
+  }
+  goToAboutUsStgjScoutsCalendar() {
+    window.location.href = '../about-us/stgj-scouts#calendar-section';
+  }
+  goToGallery() {
+    window.location.href = '../gallery';
+  }
+  goToTeamsOverview() {
+    window.location.href = '../teams/teams-overview';
+  }
+  goToAboutUsStgjScoutsFaqs() {
+    window.location.href = '../about-us/stgj-scouts#faq-section';
+  }
 }
