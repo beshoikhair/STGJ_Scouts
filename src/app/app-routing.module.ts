@@ -9,7 +9,7 @@ import { AboutUsBadenPowellComponent } from './pages/about-us-baden-powell/about
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: '/home',
     pathMatch: 'full',
   },
   { path: 'home', component: HomePageComponent },
