@@ -14,12 +14,12 @@
     <a
       class="page-tab"
       [class.parent]="PageTab.sub_titles.length != 0"
-      [href]="PageTab.link"
+      [routerLink]="PageTab.link"
       >{{ PageTab.title }}</a
     >
     <ul class="page-tab-subsections" *ngIf="PageTab.sub_titles.length != 0">
       <li *ngFor="let PageTabSubsection of PageTab.sub_titles">
-        <a class="page-tab-subsection" [href]="PageTabSubsection.link">{{
+        <a class="page-tab-subsection" [routerLink]="PageTabSubsection.link">{{
           PageTabSubsection.title
         }}</a>
       </li>
