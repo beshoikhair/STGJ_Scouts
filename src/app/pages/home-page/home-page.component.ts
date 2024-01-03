@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NavigationExtras, Router } from '@angular/router';
 interface TeamStats {
   teamName: string;
   teamNumbers: number;
@@ -34,19 +35,38 @@ export class HomePageComponent {
     },
   ];
 
+  constructor(private router: Router) {}
+
   goToAboutUsStgjScouts() {
-    window.location.href = '../about-us/stgj-scouts';
+    this.router.navigate(['../about-us/stgj-scouts']);
   }
+
   goToAboutUsStgjScoutsCalendar() {
-    window.location.href = '../about-us/stgj-scouts#calendar-section';
+    this.navigateToDestinationPageSection(
+      '../about-us/stgj-scouts',
+      'calendar-section'
+    );
   }
+
   goToGallery() {
-    window.location.href = '../gallery';
+    this.router.navigate(['../gallery']);
   }
+
   goToTeamsOverview() {
-    window.location.href = '../teams/teams-overview';
+    this.router.navigate(['../teams/teams-overview']);
   }
+
   goToAboutUsStgjScoutsFaqs() {
-    window.location.href = '../about-us/stgj-scouts#faq-section';
+    this.navigateToDestinationPageSection(
+      '../about-us/stgj-scouts',
+      'faq-section'
+    );
+  }
+
+  navigateToDestinationPageSection(pageUrl: string, pageSectionId: string) {
+    const navigationExtras: NavigationExtras = {
+      fragment: pageSectionId,
+    };
+    this.router.navigate([pageUrl], navigationExtras);
   }
 }
