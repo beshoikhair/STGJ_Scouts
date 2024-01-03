@@ -5,6 +5,7 @@ import { RedButtonComponent } from './red-button/red-button.component';
 import { YellowButtonComponent } from './yellow-button/yellow-button.component';
 import { YellowTextButtonComponent } from './yellow-text-button/yellow-text-button.component';
 import { FooterComponent } from './footer/footer.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,7 @@ import { FooterComponent } from './footer/footer.component';
     YellowTextButtonComponent,
     FooterComponent,
   ],
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   exports: [
     NavBarComponent,
     RedButtonComponent,
