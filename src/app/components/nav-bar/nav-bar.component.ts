@@ -80,7 +80,10 @@ export class NavBarComponent {
   ];
 
   getCurrentUrl(): string {
-    console.log(this.router.url);
-    return this.router.url;
+    let currentUrl = this.router.url;
+    if (currentUrl.includes('#')) {
+      currentUrl = currentUrl.split('#')[0];
+    }
+    return currentUrl;
   }
 }
