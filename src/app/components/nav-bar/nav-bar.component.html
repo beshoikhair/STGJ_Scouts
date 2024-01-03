@@ -11,12 +11,24 @@
 </div>
 <div class="nav-bar">
   <div class="page-tab-container" *ngFor="let PageTab of NavBarPages">
-    <a
-      class="page-tab"
-      [class.parent]="PageTab.sub_titles.length != 0"
-      [routerLink]="PageTab.link"
-      >{{ PageTab.title }}</a
-    >
+    <div *ngIf="PageTab.title == 'Contact Us'; else elseBlock">
+      <a
+        class="page-tab"
+        [class.parent]="PageTab.sub_titles.length != 0"
+        [routerLink]="getCurrentUrl()"
+        [fragment]="PageTab.link"
+        >{{ PageTab.title }}</a
+      >
+    </div>
+    <ng-template #elseBlock>
+      <a
+        class="page-tab"
+        [class.parent]="PageTab.sub_titles.length != 0"
+        [routerLink]="PageTab.link"
+        >{{ PageTab.title }}</a
+      >
+    </ng-template>
+
     <ul class="page-tab-subsections" *ngIf="PageTab.sub_titles.length != 0">
       <li *ngFor="let PageTabSubsection of PageTab.sub_titles">
         <a class="page-tab-subsection" [routerLink]="PageTabSubsection.link">{{
